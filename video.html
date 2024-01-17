@@ -4,31 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video - Título del Video</title>
-    <!-- Enlace al CSS de Bootstrap (Requiere conexión a Internet) -->
+    <!--  Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Enlace al archivo de estilo personalizado -->
+    <!-- css -->
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            padding-top: 56px; /* Altura del navbar */
-        }
-
-        .video-container {
-            margin: 50px auto; /* Márgenes superior e inferior */
-            max-width: 800px; /* Ancho máximo del contenedor del video */
-            padding-top: 20px; /* Espacio superior (padding-top) del contenedor del video */
-        }
-    </style>
 </head>
 <body>
 
     <nav class="navbar navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="./principal.html">Página de Videos</a>
-        <button class="btn btn-dark" onclick="mostrarDisclaimer()">Disclaimer</button>
+        <a href="./principal.html" class="btn btn-dark">Inicio</a>
     </nav>
-
-    <main class="container my-4">
-        <div class="row justify-content-center">
+<hr>
+    <main class="container my-4 mt-5 pt-5">
+        <div class="row justify-content-center my-4">
             <div class="col-md-8">
                 <div class="video-container">
                     <iframe width="100%" height="315" src="https://www.youtube.com/embed/Sagg08DrO5U?si=MR2Jfh_Fy9DVigOV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -47,12 +36,12 @@
         </div>
     </footer>
 
-    <!-- Enlace al script de Bootstrap (Requiere conexión a Internet) -->
+    <!-- boost -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
-    <!-- Script personalizado para mostrar y ocultar el modal de Disclaimer -->
+    <!--chat gracias -->
     <script>
         function mostrarDisclaimer() {
             $('#disclaimer-modal').modal('show');

@@ -4,37 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión</title>
-    <!-- Enlace al CSS de Bootstrap (Requiere conexión a Internet) -->
+    <!--     <!-- boost --> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Enlace al archivo de estilo común -->
+    <!-- ccsss -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Contenido de la página de inicio de sesión -->
     <div class="container my-4">
-        <div class="card">
-            <div class="card-body">
-                <h2 class="card-title">Iniciar Sesión</h2>
-                
-                <!-- Formulario de inicio de sesión -->
-                <form action="dummy_page.html" method="post">
-                    <div class="form-group">
-                        <label for="usuario">Usuario:</label>
-                        <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Cualquiera" required>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Iniciar Sesión</h2>
+                        
+                        <!-- Formulario de inicio de sesión -->
+                        <form action="dummy_page.html" method="post">
+                            <div class="form-group">
+                                <label for="usuario">Usuario:</label>
+                                <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Cualquiera" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contrasena">Contraseña:</label>
+                                <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Cualquiera" required>
+                            </div>
+                            <!-- Simular botón con enlace -->
+                            <div class="text-center">
+                                <a href="./principal.html" class="btn btn-primary">Iniciar Sesión</a>
+                            </div>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label for="contrasena">Contraseña:</label>
-                        <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Cualquiera" required>
-                    </div>
-                    <!-- Simular botón con enlace -->
-                    <a href="./principal.html" class="btn btn-primary">Iniciar Sesión</a>
-                </form>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Enlace al script de Bootstrap (Requiere conexión a Internet) -->
+    <!--     <!-- boost --> 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

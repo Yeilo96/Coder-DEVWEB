@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Videos</title>
+    <!-- boost -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+       <!-- css -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Página de Videos</a>
+        <a href="./disclaimer.html" class="btn btn-dark">Disclaimer</a>
+        <a href="./contact.html" class="btn btn-dark">Contacto</a>
+        <form class="form-inline">
+            <select class="form-control btn-dark">
+                <option value="1">Categoría 1</option>
+                <option value="2">Categoría 2</option>
+                <option value="3">Categoría 3</option>
+                <option value="4">Categoría 4</option>
+                <option value="5">Categoría 5</option>
+                <option value="6">Categoría 6</option>
+                <option value="7">Categoría 7</option>
+                <option value="8">Categoría 8</option>
+                <option value="9">Categoría 9</option>
+            </select>
+        </form>
+    </nav>
+
+    <main class="container my-4 mt-5 pt-3"> 
+       <hr>
+        <div class="row video-list pt-6">
+            <!-- Miniatura de video 1 -->
+            <div class="col-md-3">
+                
+                <div class="video-thumbnail" onclick="mostrarVideo()">
+                    <img src="https://estaticos-cdn.prensaiberica.es/clip/823f515c-8143-4044-8f13-85ea1ef58f3a_16-9-discover-aspect-ratio_default_0.jpg" alt="Perrito 1" class="img-fluid">
+                    <h5 class="text-center mt-2">Título del Video 1</h5>
+                    <p class="text-center">Descripción corta del Video 1</p>
+                </div>
+            </div>
+
+            <!-- Miniatura de video 2 -->
+            <div class="col-md-3">
+                <div class="video-thumbnail" onclick="mostrarVideo()">
+                    <img src="https://estaticos-cdn.prensaiberica.es/clip/823f515c-8143-4044-8f13-85ea1ef58f3a_16-9-discover-aspect-ratio_default_0.jpg" alt="Perrito 2" class="img-fluid">
+                    <h5 class="text-center mt-2">Título del Video 2</h5>
+                    <p class="text-center">Descripción corta del Video 2</p>
+                </div>
+            </div>
+
+            <!-- Miniatura de video 3 -->
+            <div class="col-md-3">
+                <div class="video-thumbnail" onclick="mostrarVideo()">
+                    <img src="https://estaticos-cdn.prensaiberica.es/clip/823f515c-8143-4044-8f13-85ea1ef58f3a_16-9-discover-aspect-ratio_default_0.jpg" alt="Perrito 3" class="img-fluid">
+                    <h5 class="text-center mt-2">Título del Video 3</h5>
+                    <p class="text-center">Descripción corta del Video 3</p>
+                </div>
+            </div>
+
+            <!-- Miniatura de video 4 -->
+            <div class="col-md-3">
+                <div class="video-thumbnail" onclick="mostrarVideo()">
+                    <img src="https://estaticos-cdn.prensaiberica.es/clip/823f515c-8143-4044-8f13-85ea1ef58f3a_16-9-discover-aspect-ratio_default_0.jpg" alt="Perrito 4" class="img-fluid">
+                    <h5 class="text-center mt-2">Título del Video 4</h5>
+                    <p class="text-center">Descripción corta del Video 4</p>
+                </div>
+            </div>
+                <!-- Miniatura de video 5 -->
+                <div class="col-md-3">
+                    <div class="video-thumbnail" onclick="mostrarVideo()">
+                        <img src="https://estaticos-cdn.prensaiberica.es/clip/823f515c-8143-4044-8f13-85ea1ef58f3a_16-9-discover-aspect-ratio_default_0.jpg" alt="Perrito 4" class="img-fluid">
+                        <h5 class="text-center mt-2">Título del Video 5</h5>
+                        <p class="text-center">Descripción corta del Video 5</p>
+                    </div>
+                </div>
+                
+
+                    <!-- Miniatura de video 6 -->
+            <div class="col-md-3">
+                <div class="video-thumbnail" onclick="mostrarVideo()">
+                    <img src="https://estaticos-cdn.prensaiberica.es/clip/823f515c-8143-4044-8f13-85ea1ef58f3a_16-9-discover-aspect-ratio_default_0.jpg" alt="Perrito 4" class="img-fluid">
+                    <h5 class="text-center mt-2">Título del Video 6</h5>
+                    <p class="text-center">Descripción corta del Video 6</p>
+                </div>
+            </div>
+            
+
+                <!-- Miniatura de video 7 -->
+                <div class="col-md-3">
+                    <div class="video-thumbnail" onclick="mostrarVideo()">
+                        <img src="https://estaticos-cdn.prensaiberica.es/clip/823f515c-8143-4044-8f13-85ea1ef58f3a_16-9-discover-aspect-ratio_default_0.jpg" alt="Perrito 4" class="img-fluid">
+                        <h5 class="text-center mt-2">Título del Video 7</h5>
+                        <p class="text-center">Descripción corta del Video 7</p>
+                    </div>
+                </div>
+                
+
+                    <!-- Miniatura de video 8 -->
+            <div class="col-md-3">
+                <div class="video-thumbnail" onclick="mostrarVideo()">
+                    <img src="https://estaticos-cdn.prensaiberica.es/clip/823f515c-8143-4044-8f13-85ea1ef58f3a_16-9-discover-aspect-ratio_default_0.jpg" alt="Perrito 4" class="img-fluid">
+                    <h5 class="text-center mt-2">Título del Video 8</h5>
+                    <p class="text-center">Descripción corta del Video 8</p>
+                </div>
+            </div>
+            
+            
+
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light text-center py-3 fixed-bottom">
+        <div class="container">
+            &copy; 2024 Página de Videos
+        </div>
+    </footer>
+
+    <!-- Modal del Disclaimer -->
+    <div id="disclaimer-modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Disclaimer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo vel quam ultrices posuere.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlace al script de Bootstrap (Requiere conexión a Internet) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Script personalizado para mostrar y ocultar el modal de Disclaimer y redirigir a la página del video -->
+    <script>
+        function redireccionarDisclaimer() {
+            window.location.href = './disclaimer.html';
+        }
+
+        function mostrarVideo() {
+            // Redireccionar a la página del video (video.html)
+            window.location.href = 'video.html';
+        }
+    </script>
+
+</body>
+</html>
