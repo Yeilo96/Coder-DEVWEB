@@ -1,43 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explora una variedad de videos interesantes en la Página de Videos. Encuentra contenido emocionante en diferentes categorías.">
+    <meta name="description" content="Pagina de videitos">
+    <meta name="keywords" content="nueva página, videos, shonnen">
+    <meta name="author" content="El yeilos">
     <title>Página de Videos</title>
-    
+
     <!-- boost -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- css -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
     <!-- Favicon -->
     <link rel="icon" href="ruta-del-favicon.ico" type="https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQOO0X7mMnoYz-e9Zdc6Pe6Wz7Ow1DcvhEiaex5aSv6QJDoCtcooqA7UUbjrphvjlIc">
 
 </head>
+
 <body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Página de Videos</a>
+            <a href="./disclaimer.html" class="btn btn-dark">Disclaimer</a>
+            <a href="./contact.html" class="btn btn-dark">Contacto</a>
+            <form class="form-inline">
+                <select class="form-control btn-dark">
+                    <option value="1">Categoría 1</option>
+                    <option value="2">Categoría 2</option>
+                    <option value="3">Categoría 3</option>
+                    <option value="4">Categoría 4</option>
+                    <option value="5">Categoría 5</option>
+                    <option value="6">Categoría 6</option>
+                    <option value="7">Categoría 7</option>
+                    <option value="8">Categoría 8</option>
+                    <option value="9">Categoría 9</option>
+                </select>
+            </form>
+        </nav>
+    </header>
 
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Página de Videos</a>
-        <a href="./disclaimer.html" class="btn btn-dark">Disclaimer</a>
-        <a href="./contact.html" class="btn btn-dark">Contacto</a>
-        <form class="form-inline">
-            <select class="form-control btn-dark">
-                <option value="1">Categoría 1</option>
-                <option value="2">Categoría 2</option>
-                <option value="3">Categoría 3</option>
-                <option value="4">Categoría 4</option>
-                <option value="5">Categoría 5</option>
-                <option value="6">Categoría 6</option>
-                <option value="7">Categoría 7</option>
-                <option value="8">Categoría 8</option>
-                <option value="9">Categoría 9</option>
-            </select>
-        </form>
-    </nav>
-
-    <main class="container my-4 mt-5 pt-3"> 
-       <hr>
+    <main class="container my-4 mt-5 pt-3">
+        <hr>
         <div class="row video-list pt-6">
             <!-- Miniatura de video 1 -->
             <div class="col-md-3">
@@ -113,16 +119,8 @@
                     <p class="text-center">Descripción corta del Video 8</p>
                 </div>
             </div>
-        </div>
     </main>
 
-    <footer class="bg-dark text-light text-center py-3 fixed-bottom">
-        <div class="container">
-            &copy; 2024 Página de Videos
-        </div>
-    </footer>
-
-    <!-- Modal del Disclaimer -->
     <div id="disclaimer-modal" class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -142,12 +140,19 @@
         </div>
     </div>
 
+    <footer class="bg-dark text-light text-center py-3 fixed-bottom">
+        <div class="container">
+            &copy; 2024 Página de Videos
+        </div>
+    </footer>
+
+  
+
     <!-- Enlace al script de Bootstrap (Requiere conexión a Internet) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-    <!-- Script personalizado para mostrar y ocultar el modal de Disclaimer y redirigir a la página del video -->
+
     <script>
         function redireccionarDisclaimer() {
             window.location.href = './disclaimer.html';
@@ -158,7 +163,6 @@
             window.location.href = 'video.html';
         }
     </script>
-
 </body>
 </html>
 

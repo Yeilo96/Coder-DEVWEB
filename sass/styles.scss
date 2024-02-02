@@ -1,0 +1,28 @@
+.btn-dark {
+    // Animación para agrandar el botón
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+.btn-primary {
+    // Animación para agrandar el botón
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.5);
+    }
+}
+
+img {
+    // Tamaño inicial
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  
+    // Cambio de tamaño al pasar el mouse por encima
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
